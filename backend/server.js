@@ -6,9 +6,15 @@ import userRouter from "./routes/userRoute.js";
 import 'dotenv/config';
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
+import cors from "cors";
 const app = express();
 const port = 4000;
-
+app.use(cors({
+    origin: "https://tomato-food-del-app-admin.onrender.com", // Specify your front-end URL here
+    methods: ['GET', 'POST'], // Allowed HTTP methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers (adjust as needed)
+    credentials: true, // Allow cookies (if required)
+}));
 app.use(express.json());
 app.use(cors());
 
