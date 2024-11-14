@@ -46,6 +46,7 @@
         font-size: 12px;
         grid-template-columns: 0.5fr 2fr 1fr;
         padding: 15px 8px;
+        width: 280px;
     }
     .order-item select{
         padding: 5px;

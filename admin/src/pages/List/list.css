@@ -22,8 +22,10 @@
 
 @media (max-width:600px) {
         .list-table-format{
-            grid-template-columns: 1fr 3fr 1fr;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr ;
             gap: 15px;
+            width: 288px;
         }
         .list-table-format .title{
             display: none;

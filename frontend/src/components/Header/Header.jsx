@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 
 
-export const Header = () => {
+export const Header = () => {1
   return (
     <div className='header'>
         <div className="header-contents">

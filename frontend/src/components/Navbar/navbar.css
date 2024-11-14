@@ -130,6 +130,13 @@
     .navbar-right button{
         padding: 8px 25px;
     }
+    .navbar-profile{
+        position: relative;
+    }
+    .nav-profile-dropdown{
+        position: absolute;
+        right: -30px;
+    }
 }
 @media (max-width:900px) {
     .navbar .logo{

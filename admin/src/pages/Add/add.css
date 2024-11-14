@@ -46,5 +46,8 @@
     .add-price input{
         border: 1px solid black;
     }
+    .add-price {
+        margin-top: 19px;
+    }
     
 }
