@@ -1,5 +1,5 @@
 import express from "express";
-import cors from 'cors';
+
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
@@ -9,11 +9,11 @@ import orderRouter from "./routes/orderRoute.js";
 import cors from "cors";
 const app = express();
 const port = 4000;
+const urls = [ 'https://tomato-food-del-app-admin.onrender.com',
+    'https://tomato-food-del-frontend-1edm.onrender.com'];
 app.use(cors({
-    origin: "https://tomato-food-del-app-admin.onrender.com", // Specify your front-end URL here
+    origin: urls, // Specify your front-end URL here
     methods: ['GET', 'POST'], // Allowed HTTP methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers (adjust as needed)
-    credentials: true, // Allow cookies (if required)
 }));
 app.use(express.json());
 app.use(cors());
