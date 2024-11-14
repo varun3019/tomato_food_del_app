@@ -9,7 +9,6 @@ const List = ({url}) => {
 
  const fetchList = async ()=>{
   const response = await axios.get(`${url}/api/food/list`);
-  console.log(response.data.data);
   if(response.data.succes){
     setList(response.data.data);
   }
