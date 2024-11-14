@@ -10,7 +10,7 @@ import cors from "cors";
 const app = express();
 const port = 4000;
 const urls = [ 'https://tomato-food-del-app-admin.onrender.com',
-    'https://tomato-food-del-frontend-1edm.onrender.com'];
+    'https://tomato-food-del-frontend-1edm.onrender.com',"https://tomato-food-del-backend-gh2m.onrender.com/api/food/list"];
 app.use(cors({
     origin: urls, // Specify your front-end URL here
     methods: ['GET', 'POST'], // Allowed HTTP methods
