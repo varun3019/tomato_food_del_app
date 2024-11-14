@@ -9,7 +9,7 @@ export const assets ={
     logo,
     add_icon,
     order_icon,
-    profile_image,
+    profile_image, 
     upload_area,
     parcel_icon
 }
