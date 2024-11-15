@@ -5,7 +5,7 @@
 
     const StoreContextProvider = (props) => {
         const [cartItems, setCartItems] = useState({});
-        const url = "https://tomato-food-del-backend-uegh.onrender.com";
+        const url = "http://localhost:4000";
         const [token, setToken] = useState("");
         const [food_list, setFoodList] = useState([]);
 
@@ -47,6 +47,7 @@
         const fetchFoodList = async () => {
             const response = await axios.get(url+"/api/food/list");
             setFoodList(response.data.data);
+
         }
         const loadCartData = async (token) => {
                 const response = await axios.get(url + "/api/cart/get", { headers: { token } });
@@ -75,6 +76,7 @@
             token,
             setToken
         }
+
         return (
             <StoreContext.Provider value={contextValue}>
                 {props.children}
